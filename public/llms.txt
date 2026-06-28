@@ -1,0 +1,27 @@
+# {{BRAND_NAME}}
+
+> {{SITE_DESCRIPTION}}
+
+## Key pages
+
+- Home: /
+- Buy: /buy
+- Rent: /rent
+- Off-the-plan projects: /projects
+- Commercial property: /commercial
+- Market insights: /insights
+- About: /about
+- Contact: /contact
+
+## Contact
+
+<!-- TODO(client): fill in real contact details. -->
+- Email: hello@example.com
+- Phone: {{CONTACT_PHONE}}
+- Office: {{OFFICE_ADDRESS}}
+
+## Brand
+
+<!-- TODO(client): set brand colours (see app/globals.css @theme tokens). -->
+- Primary: #1f2937
+- Accent: #9ca3af
