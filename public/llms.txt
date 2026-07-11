@@ -1,0 +1,43 @@
+# MR ESTATES
+
+> MR Estates is a premium Melbourne real estate agency specialising in residential sales, rentals, off-the-plan projects, and commercial property. Our approach is curated, organised, and calm — we favour careful selection and considered expertise over volume.
+
+## About
+
+MR Estates helps buyers, sellers, investors, and tenants across metropolitan Melbourne. We guide clients end-to-end: from initial consultation and property shortlisting through inspections, due diligence, negotiation, and settlement, with a single accountable point of contact.
+
+## Services
+
+- Buy: move-in ready luxury apartments and residences for sale across Melbourne.
+- Rent: premium residential and commercial tenancies, personally managed.
+- Off-the-plan projects: apartment towers and boutique residential developments.
+- Commercial property: office, retail, and mixed-use investment opportunities.
+- Market insights: research and commentary on the Melbourne property market.
+
+## Areas served
+
+Melbourne, Victoria, Australia — including the CBD and surrounding inner and metropolitan suburbs.
+
+## Key pages
+
+- Home: /
+- Buy: /buy
+- Rent: /rent
+- Off-the-plan projects: /projects
+- Commercial property: /commercial
+- Market insights: /insights
+- About: /about
+- Contact: /contact
+- Detailed index for LLMs: /llms-full.txt
+
+## Contact
+
+- Email: hello@mrestates.com.au
+- Phone: (03) 9824 9824
+- Office: Level 2, 530 Collins Street, Melbourne VIC 3000
+- Hours: Mon–Fri 9:00–17:30, Sat 10:00–15:00
+
+## Brand
+
+- Primary green: #0B2E22
+- Accent gold: #A37E2C

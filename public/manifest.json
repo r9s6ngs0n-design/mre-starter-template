@@ -1,0 +1,16 @@
+{
+  "name": "MR ESTATES",
+  "short_name": "MR ESTATES",
+  "description": "Premium Melbourne real estate — buy, rent, off-the-plan projects, and commercial property.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B2E22",
+  "theme_color": "#0B2E22",
+  "icons": [
+    {
+      "src": "/images/logo-mark-light@2x.png",
+      "sizes": "552x408",
+      "type": "image/png"
+    }
+  ]
+}
