@@ -7,6 +7,7 @@ import { SiteLogo } from "@/components/site-logo"
 import { subscribeNewsletter } from "@/lib/leads"
 import type { SiteDocument } from "@/lib/documents"
 import { DocumentFooterLinks } from "@/components/documents/document-resources"
+import { SITE_NAME } from "@/lib/seo"
 
 const columns = [
   {
@@ -61,12 +62,11 @@ export function SiteFooter({ documents = [] }: { documents?: SiteDocument[] }) {
           }
         >
           <div>
-            <NavLink href="/" aria-label="MR Estates home">
+            <NavLink href="/" aria-label={`${SITE_NAME} home`}>
               <SiteLogo variant="light" size="lg" />
             </NavLink>
             <p className="mt-5 max-w-xs text-pretty text-sm leading-relaxed text-cream/70">
-              A premium Melbourne agency for off-the-plan projects, residential sales, rentals and commercial property.
-              Curated, organised, calm.
+              {'{{PLACEHOLDER}}'}
             </p>
           </div>
 
@@ -90,7 +90,7 @@ export function SiteFooter({ documents = [] }: { documents?: SiteDocument[] }) {
           <div>
             <h3 className="eyebrow !text-gold">Stay informed</h3>
             <p className="mt-5 text-sm leading-relaxed text-cream/70">
-              Receive curated releases and market insight before they reach the public.
+              {'{{PLACEHOLDER}}'}
             </p>
             <form className="mt-5 flex flex-col gap-3" aria-label="Newsletter signup" onSubmit={handleNewsletter}>
               <label className="sr-only" htmlFor="footer-role">
@@ -143,20 +143,18 @@ export function SiteFooter({ documents = [] }: { documents?: SiteDocument[] }) {
           <div>
             <p className="eyebrow !text-cream/50">Office</p>
             <p className="mt-3 leading-relaxed">
-              Level 2, 530 Collins Street
-              <br />
-              Melbourne VIC 3000
+              {'{{PLACEHOLDER}}'}
             </p>
           </div>
           <div>
             <p className="eyebrow !text-cream/50">Contact</p>
             <p className="mt-3 leading-relaxed">
-              <a href="tel:+61398249824" className="transition-colors hover:text-gold">
-                (03) 9824 9824
+              <a href="tel:{{PLACEHOLDER}}" className="transition-colors hover:text-gold">
+                {'{{PLACEHOLDER}}'}
               </a>
               <br />
-              <a href="mailto:hello@mrestates.com.au" className="transition-colors hover:text-gold">
-                hello@mrestates.com.au
+              <a href="mailto:{{PLACEHOLDER}}" className="transition-colors hover:text-gold">
+                {'{{PLACEHOLDER}}'}
               </a>
             </p>
           </div>
@@ -177,7 +175,7 @@ export function SiteFooter({ documents = [] }: { documents?: SiteDocument[] }) {
         </div>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-cream/15 pt-6 text-xs text-cream/45 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} MR Estates. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {SITE_NAME}. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="transition-colors hover:text-gold">
               Privacy

@@ -72,7 +72,7 @@ export function HomeHero() {
       >
         <div className="max-w-2xl">
           <TextReveal
-            text="Melbourne living, curated."
+            text="{{PLACEHOLDER}}"
             as="h1"
             immediate
             className="text-display font-serif font-light leading-[1.08] text-balance text-cream"

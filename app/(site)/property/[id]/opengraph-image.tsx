@@ -1,20 +1,22 @@
 import { ImageResponse } from 'next/og'
 import { getListingBySlug } from '@/lib/queries-server'
+import { SITE_NAME } from '@/lib/seo'
 
-export const alt = 'MR ESTATES property'
+// TODO(client): set property OG image alt text
+export const alt = '{{PLACEHOLDER}}'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
-const GREEN = '#0B2E22'
-const GOLD = '#A37E2C'
-const CREAM = '#F5F1E8'
+const BG = '#2a2a2a'
+const ACCENT = '#888888'
+const TEXT = '#f5f5f5'
 
 export default async function PropertyOgImage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const listing = await getListingBySlug(id).catch(() => null)
 
-  const title = listing?.title ?? 'Melbourne Property'
-  const suburb = listing?.suburb ?? 'Melbourne'
+  const title = listing?.title ?? '{{PLACEHOLDER}}'
+  const suburb = listing?.suburb ?? '{{PLACEHOLDER}}'
   const price = listing?.price_display ?? undefined
   const bgImage = listing?.images?.[0]
 
@@ -26,7 +28,7 @@ export default async function PropertyOgImage({ params }: { params: Promise<{ id
           height: '100%',
           display: 'flex',
           position: 'relative',
-          background: GREEN,
+          background: BG,
           fontFamily: 'sans-serif',
         }}
       >
@@ -44,7 +46,7 @@ export default async function PropertyOgImage({ params }: { params: Promise<{ id
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(180deg, rgba(11,46,34,0.35) 0%, rgba(11,46,34,0.92) 100%)',
+            background: 'linear-gradient(180deg, rgba(42,42,42,0.35) 0%, rgba(42,42,42,0.92) 100%)',
           }}
         />
         <div
@@ -63,20 +65,20 @@ export default async function PropertyOgImage({ params }: { params: Promise<{ id
               fontSize: 28,
               letterSpacing: 8,
               textTransform: 'uppercase',
-              color: GOLD,
+              color: ACCENT,
             }}
           >
-            MR Estates
+            {SITE_NAME}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div style={{ fontSize: 26, letterSpacing: 4, textTransform: 'uppercase', color: 'rgba(245,241,232,0.85)' }}>
+            <div style={{ fontSize: 26, letterSpacing: 4, textTransform: 'uppercase', color: 'rgba(245,245,245,0.85)' }}>
               {suburb}
             </div>
-            <div style={{ marginTop: 16, fontSize: 68, lineHeight: 1.1, color: CREAM, maxWidth: 1000 }}>
+            <div style={{ marginTop: 16, fontSize: 68, lineHeight: 1.1, color: TEXT, maxWidth: 1000 }}>
               {title}
             </div>
             {price ? (
-              <div style={{ marginTop: 24, fontSize: 34, color: GOLD }}>{price}</div>
+              <div style={{ marginTop: 24, fontSize: 34, color: ACCENT }}>{price}</div>
             ) : null}
           </div>
         </div>

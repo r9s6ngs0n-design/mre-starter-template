@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import { AdminLayoutClient } from './admin-layout-client'
+import { SITE_NAME } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Admin | MR ESTATES',
-    template: '%s | MR ESTATES',
+    default: `Admin | ${SITE_NAME}`,
+    template: `%s | ${SITE_NAME}`,
   },
   robots: { index: false, follow: false },
 }

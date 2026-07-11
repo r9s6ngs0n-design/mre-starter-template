@@ -8,7 +8,8 @@ import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
   title: 'Contact',
-  description: 'Get in touch with MR Estates for property enquiries, appraisals, or market advice.',
+  // TODO(client): contact page meta description
+  description: '{{PLACEHOLDER}}',
   path: '/contact',
 })
 
@@ -36,8 +37,7 @@ export default async function ContactPage() {
                       />
                       <FadeUp delay={100}>
                         <p className="mt-6 text-body text-ink/80">
-                          Whether you&apos;re looking to buy, sell, invest, or simply explore the market, we&apos;re here to
-                          help. Complete the form or reach out directly.
+                          {'{{PLACEHOLDER}}'}
                         </p>
                       </FadeUp>
 
@@ -45,22 +45,20 @@ export default async function ContactPage() {
                         <FadeUp delay={180}>
                           <div>
                             <p className="eyebrow">Phone</p>
-                            <p className="mt-3 text-xl text-ink">(03) 9824 9824</p>
+                            <p className="mt-3 text-xl text-ink">{'{{PLACEHOLDER}}'}</p>
                           </div>
                         </FadeUp>
                         <FadeUp delay={240}>
                           <div>
                             <p className="eyebrow">Email</p>
-                            <p className="mt-3 text-xl text-ink">hello@mrestates.com.au</p>
+                            <p className="mt-3 text-xl text-ink">{'{{PLACEHOLDER}}'}</p>
                           </div>
                         </FadeUp>
                         <FadeUp delay={300}>
                           <div>
                             <p className="eyebrow">Address</p>
                             <p className="mt-3 text-xl text-ink">
-                              Level 2, 530 Collins Street
-                              <br />
-                              Melbourne, VIC 3000
+                              {'{{PLACEHOLDER}}'}
                             </p>
                           </div>
                         </FadeUp>

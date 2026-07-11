@@ -1,12 +1,14 @@
 import { ImageResponse } from 'next/og'
+import { SITE_NAME } from '@/lib/seo'
 
-export const alt = 'MR ESTATES — Melbourne Living, Curated'
+// TODO(client): set OG image alt text
+export const alt = '{{PLACEHOLDER}}'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
-const GREEN = '#0B2E22'
-const GOLD = '#A37E2C'
-const CREAM = '#F5F1E8'
+const BG = '#2a2a2a'
+const ACCENT = '#888888'
+const TEXT = '#f5f5f5'
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -18,7 +20,7 @@ export default function OpengraphImage() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          background: GREEN,
+          background: BG,
           padding: '80px',
           fontFamily: 'sans-serif',
         }}
@@ -28,30 +30,30 @@ export default function OpengraphImage() {
             fontSize: 30,
             letterSpacing: 8,
             textTransform: 'uppercase',
-            color: GOLD,
+            color: ACCENT,
           }}
         >
-          MR Estates
+          {SITE_NAME}
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div
             style={{
               fontSize: 76,
               lineHeight: 1.1,
-              color: CREAM,
+              color: TEXT,
               maxWidth: 900,
             }}
           >
-            Melbourne Living, Curated
+            {'{{PLACEHOLDER}}'}
           </div>
-          <div style={{ marginTop: 28, fontSize: 30, color: 'rgba(245,241,232,0.72)', maxWidth: 860 }}>
-            Residential sales, rentals, off-the-plan projects, and commercial property.
+          <div style={{ marginTop: 28, fontSize: 30, color: 'rgba(245,245,245,0.72)', maxWidth: 860 }}>
+            {'{{PLACEHOLDER}}'}
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ width: 64, height: 3, background: GOLD }} />
-          <div style={{ marginLeft: 20, fontSize: 26, color: 'rgba(245,241,232,0.8)' }}>
-            mrestates.com.au
+          <div style={{ width: 64, height: 3, background: ACCENT }} />
+          <div style={{ marginLeft: 20, fontSize: 26, color: 'rgba(245,245,245,0.8)' }}>
+            {'{{PLACEHOLDER}}'}
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ export function FeaturedCollection({ properties }: FeaturedCollectionProps) {
         <div className="max-w-2xl">
           <SectionEyebrow>Featured collection</SectionEyebrow>
           <h2 className="mt-6 text-balance text-headline font-serif font-light text-ink">
-            A curated portfolio, not a search result.
+            {'{{PLACEHOLDER}}'}
           </h2>
         </div>
         <AnimatedLink href="/buy">View all</AnimatedLink>

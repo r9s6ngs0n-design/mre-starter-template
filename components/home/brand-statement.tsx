@@ -3,18 +3,19 @@ import { SectionEyebrow } from "@/components/section-eyebrow"
 import { EditorialSection } from "@/components/layout/editorial-section"
 import { KeyRound, Compass, ClipboardList } from "lucide-react"
 
+// TODO(client): set point-of-view pain points
 const pains = [
   {
     icon: KeyRound,
-    text: "The best off-the-plan stock is allocated before it ever reaches the public listings.",
+    text: "{{PLACEHOLDER}}",
   },
   {
     icon: Compass,
-    text: "Investors are handed noise and pressure — not considered, independent guidance.",
+    text: "{{PLACEHOLDER}}",
   },
   {
     icon: ClipboardList,
-    text: "The process feels scattered: too many agents, too little clarity, no single point of trust.",
+    text: "{{PLACEHOLDER}}",
   },
 ]
 
@@ -25,14 +26,10 @@ export function PointOfView() {
         <div className="mx-auto max-w-4xl text-center md:mx-0 md:text-left">
           <SectionEyebrow className="justify-center md:justify-start">Our point of view</SectionEyebrow>
           <p className="mt-8 text-balance text-headline font-serif font-light text-ink">
-            For three decades, we have believed that buying property should feel less like a transaction and more
-            like being shown something <em className="font-serif italic text-gold">rare</em> — by someone who already
-            knows it intimately.
+            {'{{PLACEHOLDER}}'}
           </p>
           <p className="mx-auto mt-8 max-w-xl text-pretty text-body text-muted-foreground md:mx-0">
-            MR Estates is a deliberately small agency. We represent a curated portfolio across Melbourne&apos;s most
-            considered addresses, and we guide a select group of buyers and investors through it with patience and
-            precision.
+            {'{{PLACEHOLDER}}'}
           </p>
         </div>
       </EditorialSection>
@@ -47,7 +44,7 @@ export function ProblemSection() {
         <div className="max-w-2xl">
           <SectionEyebrow>The problem</SectionEyebrow>
           <h2 className="mt-6 text-balance text-headline font-serif font-light text-ink">
-            The right property is rarely the one everyone else can see.
+            {'{{PLACEHOLDER}}'}
           </h2>
         </div>
 

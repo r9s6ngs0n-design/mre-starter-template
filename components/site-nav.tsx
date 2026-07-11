@@ -11,6 +11,7 @@ import { useAuth } from "@/contexts/auth-context"
 import { useNavigationPending } from "@/contexts/navigation-context"
 import { duration, easeEditorial } from "@/lib/motion"
 import { cn } from "@/lib/utils"
+import { SITE_NAME } from "@/lib/seo"
 
 const HERO_TRANSPARENT_PATHS = new Set(["/", "/buy", "/rent", "/projects", "/commercial", "/about"])
 
@@ -94,7 +95,7 @@ export function SiteNav({ transparentOverHero }: SiteNavProps) {
             <NavLink
               href="/"
               className="inline-flex items-center leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
-              aria-label="MR Estates home"
+              aria-label={`${SITE_NAME} home`}
             >
               <SiteLogo variant="light" size="nav" priority />
             </NavLink>

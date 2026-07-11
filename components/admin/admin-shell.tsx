@@ -22,6 +22,7 @@ import { useAuth } from '@/contexts/auth-context'
 import { AdminThemeProvider, useAdminTheme } from '@/contexts/admin-theme-context'
 import { RequireAuth } from '@/components/admin/require-auth'
 import { cn } from '@/lib/utils'
+import { SITE_NAME } from '@/lib/seo'
 
 const nav = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
@@ -52,9 +53,9 @@ function AdminShellInner({ children }: { children: React.ReactNode }) {
               'block border-b px-5 py-5 transition-colors focus:outline-none focus-visible:ring-2',
               t.logoLink
             )}
-            aria-label="MR Estates home"
+            aria-label={`${SITE_NAME} home`}
           >
-            <p className={cn('font-serif text-lg', t.logoTitle)}>MR ESTATES</p>
+            <p className={cn('font-serif text-lg', t.logoTitle)}>{SITE_NAME}</p>
             <p className={cn('text-xs', t.logoSub)}>Admin CRM</p>
           </Link>
           <nav className="flex-1 space-y-0.5 p-3">
@@ -88,9 +89,9 @@ function AdminShellInner({ children }: { children: React.ReactNode }) {
                 'md:hidden font-serif transition-colors focus:outline-none focus-visible:ring-2',
                 t.mobileLogo
               )}
-              aria-label="MR Estates home"
+              aria-label={`${SITE_NAME} home`}
             >
-              MR ESTATES Admin
+              {SITE_NAME} Admin
             </Link>
             <div className="ml-auto flex items-center gap-3">
               <span className={cn('rounded-full border px-2.5 py-0.5 text-xs capitalize', t.badge)}>

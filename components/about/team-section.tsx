@@ -18,8 +18,7 @@ export function TeamSection({ team }: TeamSectionProps) {
         <FadeUp className="mb-12 max-w-2xl">
           <h2 className="text-headline font-serif font-light text-ink">The Team</h2>
           <p className="mt-4 text-body text-ink/80">
-            A carefully assembled group of experienced real estate professionals, each bringing distinctive expertise
-            to the partnership.
+            {'{{PLACEHOLDER}}'}
           </p>
         </FadeUp>
 

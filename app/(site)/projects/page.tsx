@@ -14,7 +14,7 @@ import { buildBreadcrumb, buildFAQ } from '@/lib/schemaUtils'
 
 export const metadata = buildMetadata({
   title: 'Off-the-Plan Projects',
-  description: 'Explore curated off-the-plan apartment projects.',
+  description: '{{PLACEHOLDER}}',
   path: '/projects',
 })
 
@@ -43,7 +43,7 @@ export default async function ProjectsPage({ searchParams }: Props) {
       <CategoryHero
         title="Off-the-Plan Projects"
         subtitle="Premium Opportunity"
-        description="Handpicked off-the-plan apartment towers and boutique residential developments. Each project is selected for location and investment quality."
+        description="{{PLACEHOLDER}}"
         image="/images/pillar-projects.png"
       />
       <section className="bg-cream py-8">

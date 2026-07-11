@@ -6,32 +6,33 @@ import { EditorialSection } from "@/components/layout/editorial-section"
 import { HoverZoom } from "@/components/motion/hover-zoom"
 import { DrawUnderline } from "@/components/motion/draw-underline"
 
+// TODO(client): set expertise pillar captions
 const pillars = [
   {
     tag: "Buy",
     title: "Move-in ready",
-    caption: "Finished residences you can walk through, value, and own now.",
+    caption: "{{PLACEHOLDER}}",
     image: "/images/pillar-completed.png",
     href: "/buy",
   },
   {
     tag: "Rent",
     title: "Premium tenancies",
-    caption: "Curated rental properties across Melbourne's most desirable suburbs.",
+    caption: "{{PLACEHOLDER}}",
     image: "/images/pillar-completed.png",
     href: "/rent",
   },
   {
     tag: "Off the Plan",
     title: "Off-the-plan",
-    caption: "Tomorrow's addresses, secured today — before the wider market.",
+    caption: "{{PLACEHOLDER}}",
     image: "/images/pillar-projects.png",
     href: "/projects",
   },
   {
     tag: "Commercial",
     title: "Investment & yield",
-    caption: "Office, retail and mixed-use opportunities across the city.",
+    caption: "{{PLACEHOLDER}}",
     image: "/images/pillar-commercial.png",
     href: "/commercial",
   },

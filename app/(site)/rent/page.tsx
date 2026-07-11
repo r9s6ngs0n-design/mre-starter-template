@@ -14,7 +14,7 @@ import { buildBreadcrumb, buildFAQ } from '@/lib/schemaUtils'
 
 export const metadata = buildMetadata({
   title: 'Rent',
-  description: 'Browse premium rental properties.',
+  description: '{{PLACEHOLDER}}',
   path: '/rent',
 })
 
@@ -43,7 +43,7 @@ export default async function RentPage({ searchParams }: Props) {
       <CategoryHero
         title="Rent"
         subtitle="Available to Lease"
-        description="A curated selection of rental properties. Each tenancy is managed with the same attention to detail as every other engagement."
+        description="{{PLACEHOLDER}}"
         image="/images/pillar-completed.png"
       />
       <section className="bg-cream py-8">

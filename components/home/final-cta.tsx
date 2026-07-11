@@ -11,16 +11,16 @@ export function FinalCta() {
             <span className="eyebrow !text-gold">Begin the conversation</span>
             <span aria-hidden className="h-px w-10 bg-gold" />
           </div>
-          <h2 className="mt-8 text-balance text-display font-serif font-light">Ready to move?</h2>
+          <h2 className="mt-8 text-balance text-display font-serif font-light">{'{{PLACEHOLDER}}'}</h2>
           <p className="mx-auto mt-6 max-w-md text-pretty text-body text-cream/70">
-            Request a private appraisal or arrange an inspection. One conversation is all it takes to begin.
+            {'{{PLACEHOLDER}}'}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <MagneticButton href="/contact" variant="filled">
               Request an Appraisal
             </MagneticButton>
-            <MagneticButton href="tel:+61398249824" variant="ghost">
-              (03) 9824 9824
+            <MagneticButton href="tel:{{PLACEHOLDER}}" variant="ghost">
+              {'{{PLACEHOLDER}}'}
             </MagneticButton>
           </div>
         </FadeUp>

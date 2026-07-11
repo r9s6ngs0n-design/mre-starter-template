@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { useAuth } from '@/contexts/auth-context'
 import { cn } from '@/lib/utils'
+import { SITE_NAME } from '@/lib/seo'
 import { Heart, Calendar, ClipboardList, Settings, LogOut, Home, Menu, X } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
@@ -44,7 +45,7 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
       <header className="h-14 bg-forest-deep flex items-center px-4 md:px-6 gap-4 shrink-0">
         <Link href="/" className="flex items-center gap-2 mr-auto" aria-label="Back to site">
           <Home className="w-4 h-4 text-gold" />
-          <span className="hidden sm:inline text-cream/80 text-xs tracking-wide">MR ESTATES</span>
+          <span className="hidden sm:inline text-cream/80 text-xs tracking-wide">{SITE_NAME}</span>
         </Link>
 
         {/* Desktop nav */}

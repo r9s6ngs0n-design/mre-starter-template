@@ -18,7 +18,8 @@ const insightsBreadcrumb = buildBreadcrumb([
 
 export const metadata = buildMetadata({
   title: 'Insights',
-  description: 'Market insights, investment perspectives, and Melbourne real estate analysis from MR Estates.',
+  // TODO(client): insights page meta description
+  description: '{{PLACEHOLDER}}',
   path: '/insights',
 })
 
@@ -70,8 +71,7 @@ export default async function InsightsPage() {
                   <div className="max-w-2xl">
                     <h1 className="text-display font-serif font-light text-ink">Insights</h1>
                     <p className="mt-6 text-body text-ink/80">
-                      Market analysis, investment perspectives, and considered observations on Melbourne&apos;s evolving
-                      real estate landscape. Written for owners, buyers, and investors seeking clarity.
+                      {'{{PLACEHOLDER}}'}
                     </p>
                   </div>
                 </div>

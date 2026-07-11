@@ -6,14 +6,13 @@ import type { Metadata } from 'next'
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com').replace(/\/$/, '')
 
 /* TODO(client): brand / agency display name */
-export const SITE_NAME = 'Agency Name'
+export const SITE_NAME = '{{PLACEHOLDER}}'
 
 /* TODO(client): default document title (used when a page omits `title`) */
-export const DEFAULT_TITLE = 'Agency Name — Tagline'
+export const DEFAULT_TITLE = '{{PLACEHOLDER}}'
 
 /* TODO(client): default meta description */
-export const DEFAULT_DESCRIPTION =
-  'Premium real estate agency. Replace this description with the client value proposition.'
+export const DEFAULT_DESCRIPTION = '{{PLACEHOLDER}}'
 
 export const TITLE_TEMPLATE = `%s — ${SITE_NAME}`
 

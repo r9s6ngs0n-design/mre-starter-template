@@ -4,15 +4,15 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Brand palette */
-  --forest-deep: #0b2e22; /* dominant brand colour */
-  --forest: #0f3d2e; /* lifted variant */
-  --green-mid: #006039; /* links/hover on light only */
-  --gold: #a37e2c; /* hairline jewel accent — decorative only (fills, borders, icons on dark bg) */
-  --gold-text: #7a5e1c; /* accessible gold for text on light backgrounds — 5.0:1 on cream (WCAG AA) */
-  --cream: #f4f2ec; /* primary canvas */
-  --white: #ffffff; /* lifted surfaces */
-  --ink: #0a1f18; /* headings/body */
+  /* Brand palette — neutral greyscale starter values */
+  --forest-deep: #2a2a2a; /* TODO(client): set brand value */
+  --forest: #333333; /* TODO(client): set brand value */
+  --green-mid: #555555; /* TODO(client): set brand value */
+  --gold: #888888; /* TODO(client): set brand value */
+  --gold-text: #666666; /* TODO(client): set brand value */
+  --cream: #f5f5f5; /* TODO(client): set brand value */
+  --white: #ffffff; /* TODO(client): set brand value */
+  --ink: #1a1a1a; /* TODO(client): set brand value */
 
   --background: var(--cream);
   --foreground: var(--ink);
@@ -24,14 +24,14 @@
   --primary-foreground: var(--cream);
   --secondary: var(--white);
   --secondary-foreground: var(--ink);
-  --muted: #e9e6dc;
-  --muted-foreground: #5a6a60;
+  --muted: #e5e5e5; /* TODO(client): set brand value */
+  --muted-foreground: #737373; /* TODO(client): set brand value */
   --accent: var(--gold);
   --accent-foreground: var(--forest-deep);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #ffffff;
-  --border: #ddd8cb;
-  --input: #ddd8cb;
+  --border: #d4d4d4; /* TODO(client): set brand value */
+  --input: #d4d4d4; /* TODO(client): set brand value */
   --ring: var(--gold);
   --radius: 0.25rem;
 
@@ -44,13 +44,13 @@
   --text-caption: 0.75rem;
   --text-numeral: clamp(4rem, 8vw + 1rem, 8rem);
 
-  /* Hero scrim — directional bottom-left to transparent top-right */
+  /* Hero scrim */
   --scrim-hero: linear-gradient(
     135deg,
-    rgb(11 46 34 / 0.72) 0%,
-    rgb(11 46 34 / 0.38) 45%,
-    rgb(11 46 34 / 0.08) 100%
-  );
+    rgb(42 42 42 / 0.72) 0%,
+    rgb(42 42 42 / 0.38) 45%,
+    rgb(42 42 42 / 0.08) 100%
+  ); /* TODO(client): set brand value */
 }
 
 @theme inline {
@@ -283,4 +283,3 @@
     transition: none;
   }
 }
-

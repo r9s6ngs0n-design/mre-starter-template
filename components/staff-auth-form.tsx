@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useAuth } from '@/contexts/auth-context'
+import { SITE_NAME } from '@/lib/seo'
 
 export type StaffAuthMode = 'signin' | 'signup'
 
@@ -147,7 +148,7 @@ export function StaffAuthForm({ initialMode = 'signin', onSuccess, className = '
       </form>
 
       <p className="mt-4 text-xs text-muted-foreground">
-        Sign in to access your MR ESTATES account.
+        Sign in to access your {SITE_NAME} account.
       </p>
     </div>
   )

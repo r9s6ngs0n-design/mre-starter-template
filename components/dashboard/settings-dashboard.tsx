@@ -259,8 +259,8 @@ export function SettingsDashboard() {
         <h2 className="font-medium text-ink mb-1">Danger Zone</h2>
         <p className="text-xs text-muted-foreground mb-4">
           To delete your account please contact us at{' '}
-          <a href="mailto:info@mrestates.com.au" className="text-gold-text underline underline-offset-2">
-            info@mrestates.com.au
+          <a href="mailto:{{PLACEHOLDER}}" className="text-gold-text underline underline-offset-2">
+            {'{{PLACEHOLDER}}'}
           </a>
         </p>
       </section>

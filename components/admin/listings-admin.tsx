@@ -514,7 +514,7 @@ export function ListingsAdmin() {
               <div>
                 <Label>Location</Label>
                 <input
-                  placeholder="e.g. Southbank, Melbourne"
+                  placeholder="e.g. {{PLACEHOLDER}}"
                   value={form.suburb ?? ''}
                   onChange={(e) => setForm({ ...form, suburb: e.target.value })}
                   className={inputClass}
@@ -794,7 +794,7 @@ export function ListingsAdmin() {
                 <div>
                   <Label>City Slug</Label>
                   <input
-                    placeholder="e.g. melbourne"
+                    placeholder="e.g. {{PLACEHOLDER}}"
                     value={form.city_slug ?? ''}
                     onChange={(e) => setForm({ ...form, city_slug: e.target.value })}
                     className={cn(inputClass, 'font-mono text-xs')}
@@ -882,7 +882,7 @@ export function ListingsAdmin() {
                     onChange={(e) => setForm({ ...form, auction_at: e.target.value ? datetimeLocalToIso(e.target.value) : null })}
                     className={inputClass}
                   />
-                  <p className={cn('text-[0.65rem] mt-1', t.textMuted)}>Melbourne time (AEST/AEDT)</p>
+                  <p className={cn('text-[0.65rem] mt-1', t.textMuted)}>{'{{PLACEHOLDER}}'}</p>
                 </div>
                 <div>
                   <Label>Auction Location</Label>
@@ -988,7 +988,7 @@ export function ListingsAdmin() {
                 ) : (
                   <div className={cn('rounded border p-4 space-y-3', t.panelBorder)}>
                     <p className={cn('text-xs font-medium', t.textSecondary)}>New Inspection Slot</p>
-                    <p className={cn('text-[0.65rem]', t.textMuted)}>All times are Melbourne (AEST/AEDT)</p>
+                    <p className={cn('text-[0.65rem]', t.textMuted)}>{'{{PLACEHOLDER}}'}</p>
                     <div className="grid gap-3 sm:grid-cols-2">
                       <div>
                         <Label>Start</Label>
@@ -1313,7 +1313,7 @@ export function ListingsAdmin() {
             <label className="flex cursor-pointer items-center justify-between gap-3">
               <div>
                 <p className="text-sm font-medium">Publish Status</p>
-                <p className={cn('text-xs', t.textMuted)}>Visible to public on MRESTATES portal</p>
+                <p className={cn('text-xs', t.textMuted)}>{'{{PLACEHOLDER}}'}</p>
               </div>
               <div className="relative">
                 <input

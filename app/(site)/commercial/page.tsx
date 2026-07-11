@@ -14,7 +14,7 @@ import { buildBreadcrumb, buildFAQ } from '@/lib/schemaUtils'
 
 export const metadata = buildMetadata({
   title: 'Commercial Property',
-  description: 'Explore commercial real estate opportunities including office, retail, and mixed-use.',
+  description: '{{PLACEHOLDER}}',
   path: '/commercial',
 })
 
@@ -43,7 +43,7 @@ export default async function CommercialPage({ searchParams }: Props) {
       <CategoryHero
         title="Commercial Property"
         subtitle="Strategic Opportunity"
-        description="Commercial real estate spanning office, retail, and mixed-use developments — selected for location and investment fundamentals."
+        description="{{PLACEHOLDER}}"
         image="/images/pillar-commercial.png"
       />
       <section className="bg-cream py-8">

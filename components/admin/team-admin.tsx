@@ -262,7 +262,7 @@ function MemberModal({
               <label className={s.label}>Email Address</label>
               <input
                 type="email"
-                placeholder="sarah@mrestates.com.au"
+                placeholder="email@example.com"
                 value={form.email ?? ''}
                 onChange={set('email')}
                 className={s.input}

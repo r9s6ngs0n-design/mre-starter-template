@@ -2,26 +2,27 @@ import { FadeUp } from "@/components/motion/fade-up"
 import { SectionEyebrow } from "@/components/section-eyebrow"
 import { SectionNumeral } from "@/components/layout/section-numeral"
 
+// TODO(client): set how-we-work process steps
 const steps = [
   {
     n: "01",
-    title: "Enquire",
-    text: "A single conversation to understand your brief — budget, location, timeline and intent.",
+    title: "{{PLACEHOLDER}}",
+    text: "{{PLACEHOLDER}}",
   },
   {
     n: "02",
-    title: "Matched",
-    text: "We curate a shortlist from our portfolio and off-market releases, tailored precisely to you.",
+    title: "{{PLACEHOLDER}}",
+    text: "{{PLACEHOLDER}}",
   },
   {
     n: "03",
-    title: "Inspect",
-    text: "Private inspections and display previews, arranged around your schedule — never rushed.",
+    title: "{{PLACEHOLDER}}",
+    text: "{{PLACEHOLDER}}",
   },
   {
     n: "04",
-    title: "Secured",
-    text: "Offer, contract and settlement, handled end-to-end with one accountable point of contact.",
+    title: "{{PLACEHOLDER}}",
+    text: "{{PLACEHOLDER}}",
   },
 ]
 
@@ -37,11 +38,10 @@ export function SystemOverview() {
             <FadeUp className="max-w-2xl">
               <SectionEyebrow light>How we work</SectionEyebrow>
               <h2 className="mt-6 text-balance text-headline font-serif font-light">
-                A calm, considered path from first enquiry to settled keys.
+                {'{{PLACEHOLDER}}'}
               </h2>
               <p className="mt-6 max-w-lg text-pretty text-body text-cream/70">
-                One relationship, four clear stages. No noise, no pressure — only a process designed to make a
-                significant decision feel effortless.
+                {'{{PLACEHOLDER}}'}
               </p>
             </FadeUp>
 

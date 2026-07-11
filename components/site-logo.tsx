@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils"
+import { SITE_NAME } from "@/lib/seo"
 
 type LogoVariant = "dark" | "light"
 type LogoSize = "sm" | "nav" | "md" | "lg" | "intro" | "hero"
@@ -41,7 +42,7 @@ export function SiteLogo({ variant = "dark", size = "md", className, priority = 
     <img
       src={sources[variant]}
       srcSet={`${sources[variant]} 1x, ${sources2x[variant]} 2x`}
-      alt="MR Estates"
+      alt={SITE_NAME}
       width={width}
       height={config.height}
       fetchPriority={priority ? "high" : undefined}

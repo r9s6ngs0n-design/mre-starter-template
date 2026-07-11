@@ -26,7 +26,7 @@ export function InsightsTeaser({ articles }: { articles: Article[] }) {
         <div className="max-w-2xl">
           <SectionEyebrow>Insights</SectionEyebrow>
           <h2 className="mt-6 text-balance text-headline font-serif font-light text-ink">
-            Considered reading on the Melbourne market.
+            {'{{PLACEHOLDER}}'}
           </h2>
         </div>
         <AnimatedLink href="/insights">All articles</AnimatedLink>

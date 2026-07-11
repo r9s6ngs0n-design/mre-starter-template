@@ -361,7 +361,7 @@ function PostModal({
             <div>
               <label className={labelCls}>Title</label>
               <input
-                placeholder="e.g. Why Melbourne is the Top Choice"
+                placeholder="e.g. {{PLACEHOLDER}}"
                 value={form.title ?? ''}
                 onChange={onTitleChange}
                 className={inputCls}

@@ -1,4 +1,4 @@
-import { SITE_URL } from '@/lib/seo'
+import { SITE_URL, SITE_NAME } from '@/lib/seo'
 import { getAvailableListings, getPublishedBlogPosts } from '@/lib/queries-server'
 import { stripHtml } from '@/lib/rich-text'
 
@@ -24,11 +24,10 @@ export async function GET() {
 
   const lines: string[] = []
 
-  lines.push('# MR ESTATES — Full index')
+  // TODO(client): set LLM index title and summary
+  lines.push(`# ${SITE_NAME} — Full index`)
   lines.push('')
-  lines.push(
-    '> A structured, machine-readable index of MR Estates: a premium Melbourne real estate agency for residential sales, rentals, off-the-plan projects, and commercial property.',
-  )
+  lines.push('> {{PLACEHOLDER}}')
   lines.push('')
 
   lines.push('## Property categories')
@@ -65,11 +64,12 @@ export async function GET() {
     lines.push('')
   }
 
+  // TODO(client): set contact details for LLM index
   lines.push('## Contact')
   lines.push('')
-  lines.push('- Email: hello@mrestates.com.au')
-  lines.push('- Phone: (03) 9824 9824')
-  lines.push('- Office: Level 2, 530 Collins Street, Melbourne VIC 3000')
+  lines.push('- Email: {{PLACEHOLDER}}')
+  lines.push('- Phone: {{PLACEHOLDER}}')
+  lines.push('- Office: {{PLACEHOLDER}}')
   lines.push('')
 
   return new Response(lines.join('\n'), {

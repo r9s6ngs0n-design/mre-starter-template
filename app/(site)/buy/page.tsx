@@ -14,7 +14,7 @@ import { buildBreadcrumb, buildFAQ } from '@/lib/schemaUtils'
 
 export const metadata = buildMetadata({
   title: 'Buy',
-  description: 'Discover move-in ready residences for sale.',
+  description: '{{PLACEHOLDER}}',
   path: '/buy',
 })
 
@@ -43,7 +43,7 @@ export default async function BuyPage({ searchParams }: Props) {
       <CategoryHero
         title="Buy"
         subtitle="Move-in Ready"
-        description="A curated selection of residences ready to own. Each property is selected for location, design, and investment merit."
+        description="{{PLACEHOLDER}}"
         image="/images/pillar-completed.png"
       />
       <section className="bg-cream py-8">

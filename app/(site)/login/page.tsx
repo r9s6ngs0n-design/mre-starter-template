@@ -4,7 +4,7 @@ import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
   title: 'Sign In',
-  description: 'Sign in to your MR ESTATES account to manage favourites, bookings and inspections.',
+  description: '{{PLACEHOLDER}}',
   path: '/login',
   noIndex: true,
 })
