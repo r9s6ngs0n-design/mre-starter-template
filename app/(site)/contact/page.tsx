@@ -4,11 +4,13 @@ import { PageLayoutComposer } from '@/components/page-sections/page-layout-compo
 import { FadeUp } from '@/components/motion/fade-up'
 import { TextReveal } from '@/components/motion/text-reveal'
 import { getDocumentPlacementOrders } from '@/lib/queries-server'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata = {
-  title: 'Contact — {{BRAND_NAME}}',
-  description: '{{SITE_DESCRIPTION}}',
-}
+export const metadata = buildMetadata({
+  title: 'Contact',
+  description: 'Get in touch with MR Estates for property enquiries, appraisals, or market advice.',
+  path: '/contact',
+})
 
 export default async function ContactPage() {
   const placementOrders = await getDocumentPlacementOrders()
@@ -43,22 +45,23 @@ export default async function ContactPage() {
                         <FadeUp delay={180}>
                           <div>
                             <p className="eyebrow">Phone</p>
-                            {/* TODO(client): set contact phone number. */}
-                            <p className="mt-3 text-xl text-ink">{'{{CONTACT_PHONE}}'}</p>
+                            <p className="mt-3 text-xl text-ink">(03) 9824 9824</p>
                           </div>
                         </FadeUp>
                         <FadeUp delay={240}>
                           <div>
                             <p className="eyebrow">Email</p>
-                            {/* TODO(client): set contact email. */}
-                            <p className="mt-3 text-xl text-ink">{'{{CONTACT_EMAIL}}'}</p>
+                            <p className="mt-3 text-xl text-ink">hello@mrestates.com.au</p>
                           </div>
                         </FadeUp>
                         <FadeUp delay={300}>
                           <div>
                             <p className="eyebrow">Address</p>
-                            {/* TODO(client): set office address. */}
-                            <p className="mt-3 text-xl text-ink">{'{{OFFICE_ADDRESS}}'}</p>
+                            <p className="mt-3 text-xl text-ink">
+                              Level 2, 530 Collins Street
+                              <br />
+                              Melbourne, VIC 3000
+                            </p>
                           </div>
                         </FadeUp>
                       </div>

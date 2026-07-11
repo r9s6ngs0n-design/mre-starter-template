@@ -1,0 +1,6 @@
+{"sessionId":"2e414e","location":"queries-server.ts:getPublishedListings","message":"query result","data":{"category":"rental","count":0,"error":null},"timestamp":1782050391018}
+{"sessionId":"2e414e","location":"queries-server.ts:getPublishedListings","message":"query result","data":{"category":"commercial","count":1,"error":null},"timestamp":1782050392272}
+{"sessionId":"2e414e","location":"listings-admin.tsx:save","message":"save called","data":{"editId":"ae9bbd6f-a7f2-499d-b71a-a4c295896666","category":"rental","slug":"testing123","is_published":true},"timestamp":1782050618332}
+{"sessionId":"2e414e","location":"listings-admin.tsx:save:update","message":"update result","data":{"error":null,"code":null},"timestamp":1782050618681}
+{"sessionId":"2e414e","location":"queries-server.ts:getPublishedListings","message":"query result","data":{"category":"completed","count":0,"error":null},"timestamp":1782050628529}
+{"sessionId":"2e414e","location":"queries-server.ts:getPublishedListings","message":"query result","data":{"category":"rental","count":1,"error":null},"timestamp":1782050629715}

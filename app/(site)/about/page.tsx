@@ -5,11 +5,13 @@ import { SectionNumeral } from '@/components/layout/section-numeral'
 import { getPublishedTeam, getDocumentPlacementOrders } from '@/lib/queries-server'
 import { DocumentPlacementSlot } from '@/components/documents/document-placement-slot'
 import { PageLayoutComposer } from '@/components/page-sections/page-layout-composer'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata = {
-  title: 'About {{BRAND_NAME}}',
-  description: '{{SITE_DESCRIPTION}}',
-}
+export const metadata = buildMetadata({
+  title: 'About',
+  description: 'Learn about our approach, philosophy, and the experienced team behind MR Estates.',
+  path: '/about',
+})
 
 const processSteps = [
   {
@@ -52,9 +54,9 @@ export default async function AboutPage() {
             key: 'hero',
             children: (
               <CategoryHero
-                title="About {{BRAND_NAME}}"
+                title="About MR Estates"
                 subtitle="Our Story"
-                description="{{PLACEHOLDER: about hero description}}"
+                description="A premium real estate partnership rooted in deep market knowledge, aesthetic consideration, and an uncompromising commitment to client service. We represent Melbourne's finest residential and commercial property."
                 image="/images/about-hero.png"
               />
             ),
@@ -66,9 +68,15 @@ export default async function AboutPage() {
               <EditorialSection index={1}>
                 <h2 className="text-headline font-serif font-light text-ink">Our Approach</h2>
                 <div className="mt-8 space-y-6 text-body text-ink/80">
-                  {/* TODO(client): replace with the client's "our approach" copy. */}
-                  <p>{'{{PLACEHOLDER: approach paragraph 1}}'}</p>
-                  <p>{'{{PLACEHOLDER: approach paragraph 2}}'}</p>
+                  <p>
+                    MR Estates has built its reputation on a philosophy of purposeful curation. We believe the best results
+                    come not from volume, but from careful selection and considered expertise.
+                  </p>
+                  <p>
+                    Whether acquiring an off-the-plan residence, sourcing completed apartments, or identifying commercial
+                    opportunity, we guide with quiet, organised confidence. Our clients value the intellectual rigour, market
+                    understanding, and calm judgment we bring to every interaction.
+                  </p>
                 </div>
               </EditorialSection>
             ),

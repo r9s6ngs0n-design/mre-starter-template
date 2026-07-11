@@ -4,8 +4,9 @@ import { JsonLd } from '@/components/seo/json-ld'
 import { FadeUp } from '@/components/motion/fade-up'
 import { TextReveal } from '@/components/motion/text-reveal'
 import { blogPostToArticle } from '@/lib/adapters'
-import { buildBlogPosting, buildBreadcrumb } from '@/lib/schemaUtils'
+import { buildBlogPosting, buildBreadcrumb, buildFAQ } from '@/lib/schemaUtils'
 import { getBlogPostBySlug } from '@/lib/queries-server'
+import { buildMetadata } from '@/lib/seo'
 import { notFound } from 'next/navigation'
 
 type PageParams = Promise<{ slug: string }>
@@ -13,11 +14,13 @@ type PageParams = Promise<{ slug: string }>
 export async function generateMetadata(props: { params: PageParams }) {
   const params = await props.params
   const post = await getBlogPostBySlug(params.slug)
-  if (!post) return { title: 'Article — {{BRAND_NAME}}' }
-  return {
-    title: post.seo_title ?? `${post.title} — {{BRAND_NAME}}`,
+  if (!post) return buildMetadata({ title: 'Article', path: `/insights/${params.slug}`, noIndex: true })
+  return buildMetadata({
+    title: post.seo_title ?? post.title,
     description: post.seo_description ?? post.excerpt ?? undefined,
-  }
+    path: `/insights/${post.slug}`,
+    type: 'article',
+  })
 }
 
 export default async function ArticlePage(props: { params: PageParams }) {
@@ -49,6 +52,7 @@ export default async function ArticlePage(props: { params: PageParams }) {
           { name: post.title, url: `/insights/${post.slug}` },
         ])}
       />
+      {faqs.length > 0 && <JsonLd data={buildFAQ(faqs)} />}
       <main className="bg-background">
         <FadeUp immediate>
           <section className="relative h-[50svh] min-h-[400px] w-full overflow-hidden">

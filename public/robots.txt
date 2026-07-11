@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /admin/
-
-# TODO(client): replace with the production domain.
-Sitemap: https://example.com/sitemap.xml
